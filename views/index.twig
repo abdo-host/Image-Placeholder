@@ -1,0 +1,150 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <section class="py-3 text-center container">
+        <div class="row py-lg-2">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-bold"><i class="bi bi-image d-block mb-3"></i>Image Placeholder</h1>
+                <p class="lead text-muted">Create your image placeholder easily with much more option for size, color and custom text or can use sample of images and icons.</p>
+                <table class="table table-sm table-bordered mt-4 text-start" style="table-layout:fixed;">
+                    <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Default</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-primary">width</td>
+                        <td class="text-success">420</td>
+                        <td class="text-secondary">Width of image</td>
+                    </tr>
+                    <tr>
+                        <td class="text-primary">height</td>
+                        <td class="text-success">320</td>
+                        <td class="text-secondary">Height of image</td>
+                    </tr>
+                    <tr>
+                        <td class="text-primary">text</td>
+                        <td class="text-success">Placeholder</td>
+                        <td class="text-secondary">Text content on image</td>
+                    </tr>
+                    <tr>
+                        <td class="text-primary">bgColor</td>
+                        <td class="text-success">01be84</td>
+                        <td class="text-secondary">Image Background color</td>
+                    </tr>
+                    <tr>
+                        <td class="text-primary">fontSize</td>
+                        <td class="text-success">25</td>
+                        <td class="text-secondary">Font size of content</td>
+                    </tr>
+                    <tr>
+                        <td class="text-primary">textColor</td>
+                        <td class="text-success">ffffff</td>
+                        <td class="text-secondary">Text color</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th colspan="3" class="text-center">Sample Link</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                           <pre class="text-primary">
+{{ fullUrl() }}create?text=Placeholder&bgColor=dddddd&textColor=333333&fontSize=95&width=1024&height=768
+                           </pre>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="placeholder-img card-img-top" src="{{ fullUrl() }}create?text=Placeholder" alt="">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="{{ fullUrl() }}create?text=Placeholder" target="_blank" class="btn w-100 btn-secondary"><i class="bi bi-box-arrow-up-right"></i> View</a>
+                                </div>
+                                <div class="col">
+                                    <a href="{{ fullUrl() }}create?text=Placeholder" download="{{ '{{ random_key }}' }}_placeholder.tatwerat.com.jpg" target="_blank" class="btn w-100 btn-success"><i class="bi bi-file-earmark-arrow-down"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="placeholder-img card-img-top" src="{{ fullUrl() }}create?text=Tatwerat.com&bgColor=0d6efd&fontSize=40" alt="">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="{{ fullUrl() }}create?text=Tatwerat.com&bgColor=0d6efd&fontSize=40" target="_blank" class="btn w-100 btn-secondary"><i class="bi bi-box-arrow-up-right"></i> View</a>
+                                </div>
+                                <div class="col">
+                                    <a href="{{ fullUrl() }}create?text=Tatwerat.com&bgColor=0d6efd&fontSize=40" download="{{ '{{ random_key }}' }}_placeholder.tatwerat.com.jpg" target="_blank" class="btn w-100 btn-success"><i class="bi bi-file-earmark-arrow-down"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="placeholder-img card-img-top" src="{{ fullUrl() }}create?text=TOTA&hearts;&bgColor=d63384&textColor=ffffff&fontSize=60" alt="">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="{{ fullUrl() }}create?text=TOTA&hearts;&bgColor=d63384&textColor=ffffff&fontSize=60" target="_blank" class="btn w-100 btn-secondary"><i class="bi bi-box-arrow-up-right"></i> View</a>
+                                </div>
+                                <div class="col">
+                                    <a href="{{ fullUrl() }}create?text=TOTA&hearts;&bgColor=d63384&textColor=ffffff&fontSize=60" download="{{ '{{ random_key }}' }}_placeholder.tatwerat.com.jpg" target="_blank" class="btn w-100 btn-success"><i class="bi bi-file-earmark-arrow-down"></i> Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center mt-5">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="icons-tab" data-bs-toggle="tab" data-bs-target="#icons-tab-pane" type="button" role="tab" aria-controls="icons-tab-pane" aria-selected="true">Icons</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="avatars-tab" data-bs-toggle="tab" data-bs-target="#avatars-tab-pane" type="button" role="tab" aria-controls="avatars-tab-pane" aria-selected="false">Avatars</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="icons-tab-pane" role="tabpanel" aria-labelledby="icons-tab" tabindex="0">
+                           <div style="margin-left:-20px;margin-right:-20px;">
+                               {% for icon in icons %}
+                                   <a href="#" target="_blank" class="link-icons rounded">
+                                       <img src="/icons/{{ icon.name }}" style="width:48px;" alt="{{ icon.name }}">
+                                   </a>
+                               {% endfor %}
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="avatars-tab-pane" role="tabpanel" aria-labelledby="avatars-tab" tabindex="0">
+                            <div style="margin-left:-20px;margin-right:-20px;">
+                                {% for avatar in avatars %}
+                                    <a href="#" target="_blank" class="link-icons rounded">
+                                        <img src="/avatars/{{ avatar.name }}" style="width:110px;height:110px;" alt="{{ avatar.name }}">
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

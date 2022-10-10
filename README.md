@@ -4,7 +4,7 @@ Create your image placeholder easily with much more option for size, color and c
 
 ### URL Properties
 
-| Property  | Default  | Description |
+| Property Key  | Default Value  | Description |
 |:------------ |:------------|:------------|
 | width      | 420 | Width of image |
 | height      | 320 | Height of image |

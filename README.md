@@ -14,13 +14,13 @@ Create your image placeholder easily with much more option for size, color and c
 | textColor      | ffffff | Text color |
 
 ### Sample URL
-http://tplaceholder.herokuapp.com/create?text=Placeholder&bgColor=dddddd&textColor=333333&fontSize=95&width=1024&height=768
+https://placeholder.tatwerat.com/create?text=Placeholder&bgColor=dddddd&textColor=333333&fontSize=95&width=1024&height=768
 
 
 
 [![Demo](https://www.tatwerat.com/downloads/image-placeholder-github-photo.jpg)](https://tplaceholder.herokuapp.com)
 
-# [View Demo](https://tplaceholder.herokuapp.com)
+# [View Demo](https://placeholder.tatwerat.com)
 
 ### Setup Application
  ```ssh
